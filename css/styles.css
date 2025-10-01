@@ -443,3 +443,116 @@ header {
 
   .herophones{ display:block; }
 }
+
+/* brands section start */
+
+.brands-flex {
+    display: none;
+
+    @media (min-width: 768px) {
+
+        display: flex;
+        align-items:center;
+        justify-content: space-around;
+        margin-top: 5rem;
+        appearance: none;
+        background: transparent;
+        
+    }
+    
+
+}
+
+@media (min-width: 768px) and (max-width: 1199px) {
+
+
+    
+    .img1 {
+    display:flex; justify-content:center; align-items:center;
+    height: 98px;
+    width: 158px;
+    border: 1px solid var(--brand-border);
+    border-radius: 7px;
+    background: var(--brand-bg);
+    }
+    .img2 {
+    display:flex; justify-content:center; align-items:center;
+    height: 98px;
+    width: 158px;
+    border: 1px solid var(--brand-border);
+    border-radius: 7px;
+    background: var(--brand-bg);
+    
+    }
+    .img3 {
+    display:flex; justify-content:center; align-items:center;
+    height: 98px;
+    width: 158px;
+    border: 1px solid var(--brand-border);
+    border-radius: 7px;
+    background: var(--brand-bg);
+    }
+    .img4 {
+    display:flex; justify-content:center; align-items:center;
+    height: 98px;
+    width: 158px;
+    border: 1px solid var(--brand-border);
+    border-radius: 7px;
+    background: var(--brand-bg);
+    }
+    .img5 {
+    display:none;
+    }
+    .img6 {
+    display:none;
+    }
+    
+}
+@media (min-width: 1200px) {
+    
+.img1 {
+  display:flex; justify-content:center; align-items:center;
+  padding: 33px 30px;
+  border: 1px solid var(--brand-border);
+  border-radius: 7px;
+  background: var(--brand-bg);
+}
+.img2 {
+  display:flex; justify-content:center; align-items:center;
+  padding: 33px 30px;
+  border: 1px solid var(--brand-border);
+  border-radius: 7px;
+  background: var(--brand-bg);
+  
+}
+.img3 {
+  display:flex; justify-content:center; align-items:center;
+  padding: 38px 30px;
+  border: 1px solid var(--brand-border);
+  border-radius: 7px;
+  background: var(--brand-bg);
+}
+.img4 {
+  display:flex; justify-content:center; align-items:center;
+  padding: 30px 30px;
+  border: 1px solid var(--brand-border);
+  border-radius: 7px;
+  background: var(--brand-bg);
+}
+.img5 {
+  display:flex; justify-content:center; align-items:center;
+  padding: 30px 30px;
+  border: 1px solid var(--brand-border);
+  border-radius: 7px;
+  background: var(--brand-bg);
+
+}
+.img6 {
+  display:flex; justify-content:center; align-items:center;
+  padding: 30px 30px;
+  border: 1px solid var(--brand-border);
+  border-radius: 7px;
+  background: var(--brand-bg);
+
+}
+}
