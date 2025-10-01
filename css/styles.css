@@ -365,15 +365,15 @@ header {
     text-align:left;
   }
 
-  .hero-left{ display:contents; }        /* låt barnen bli egna grid-items */
+  .hero-left{ display:contents; }        
 
   .herotitle{
-    grid-column:1 / -1;                  /* egen rad, över båda kolumnerna */
+    grid-column:1 / -1;                  
     font-size:44px;
     line-height:1.1;
     margin:0 0 8px;
     text-align:center;
-    padding: 0 150px;                   /* enligt figma */
+    padding: 0 150px;                   
   }
 
   .herotext{
@@ -388,7 +388,7 @@ header {
 
   .hero-download{
     grid-column:1;
-    display:grid;                        /* knappar bredvid varandra */
+    display:grid;                        
     grid-template-columns:210px 210px;
     gap:12px;
     
@@ -422,7 +422,7 @@ header {
 
 
 
-/* Desktop ≥1200px: två kolumner, större titel, telefonerna till höger */
+
 @media (min-width:1200px){
   .hero{ padding-top:5rem; }
   .hero-grid{
