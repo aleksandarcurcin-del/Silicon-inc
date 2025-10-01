@@ -12,7 +12,6 @@
     --color-button-text: #ffffff;
     --color-button-background: var(--primary);
     --color-background-hover-background: #0B0F19;
-    
     --color-darkmode-text: #565973;
     --color-darkmode-slider: white;
     --color-logo: black;
@@ -25,7 +24,6 @@
     --faq-item-bg: rgba(255,255,255,.04);
     --faq-item-border: rgba(26, 26, 26, 0.027);
     --none: rgba(5, 5, 5, 0);
-
     --color-button-download-text: #ffffff;
     --color-button-download-background: #0B0F19;
     --color-button-download-hover-background: #0B0F19;
@@ -383,6 +381,8 @@ header {
     grid-column:1;
     margin:0 0 6px;
     top: 100px;
+    
+
                       
   }
 
@@ -968,7 +968,7 @@ padding-bottom: 0;
   background: var(--faq-item-bg, #fff);
   border: 1px solid var(--faq-item-border, rgba(31, 31, 31, 0.103));
   border-radius:12px;
-  box-shadow: 5px 2px 5px 1px #0f0f0f0a;
+  box-shadow: 0px 2px 5px 2px #0f0f0f0a;
   
 }
 
@@ -978,6 +978,7 @@ padding-bottom: 0;
     display:flex; align-items:center; justify-content:space-between;
     gap:16px; font: inherit; color: var(--color-heading-text);
     cursor:pointer;
+    font-size: 16px;
 
       &:hover {
         background-color: var(--none);
@@ -1066,11 +1067,7 @@ padding-bottom: 0;
     position: relative;
     display: flex;
     align-items: stretch;
-    height: 52px;
-    
-
-    
-    
+    height: 52px;  
 }
 
 .email-icon { 
