@@ -345,8 +345,7 @@ header {
 
 .herophones{
   display:none;              
-  width:100%;
-  height:auto;
+
 }
 
 
@@ -363,6 +362,7 @@ header {
     align-items:center;
     row-gap: 12px;
     text-align:left;
+    
   }
 
   .hero-left{ display:contents; }        
@@ -390,10 +390,7 @@ header {
     grid-column:1;
     display:grid;                        
     grid-template-columns:210px 210px;
-    gap:12px;
-    
-    
-    
+    gap:12px; 
   }
 
 
@@ -401,19 +398,20 @@ header {
     padding: 12px 20px;
     border-radius:12px;
     column-gap:1rem;
-    
   }
 
     #apple-download {
-    padding: 1px 15px; 
-}
+        padding: 1px 15px; 
+    }
 
-
+    #google-download {
+        padding: 1px 9px;
+    }
   .herophones{
     grid-column:2;
     display:block;
-    max-width:480px;
-    width:100%;
+    height: auto;
+    width:110%;
     height:auto;
     justify-self:end;
     align-self:center;
@@ -434,6 +432,7 @@ header {
   .hero-download{
     display:grid; grid-template-columns:210px 210px; gap:12px;
     justify-self:start;
+    
   }
     .herobtn .btn-area {
     padding: 12px 20px;
@@ -441,7 +440,11 @@ header {
     column-gap:1rem;
   }
 
-  .herophones{ display:block; }
+  .herophones{ 
+        display:block;
+        width:100%;
+        height:auto; 
+    }
 }
 
 /* brands section start */
