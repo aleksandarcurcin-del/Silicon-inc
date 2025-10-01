@@ -1109,3 +1109,10 @@ padding-bottom: 0;
     border-radius: 0 7px 7px 0;
     height: 52px;;
 }
+
+/* Footer start */
+
+.footer {
+    padding-block: 5dvh;
+    text-align: center;
+}
