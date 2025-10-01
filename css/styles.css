@@ -632,19 +632,11 @@ header {
 
 .hdiw-color {
     background-color: var(--color-background-hdiw);
-    height: 1000px;
-
-    @media (min-width: 768px) {
-        height: 838px;
-    }
-    @media (min-width: 1200px) {
-        height: 1077px;
-    }
-    
+    min-height: auto; height: auto; padding: 50px 0;
 }
 
 .hdiw-flex {
-    padding-top: 50px;
+    
 }
 
 .hdiw-h2 {
