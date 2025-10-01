@@ -625,3 +625,102 @@ header {
     }
     
 }
+
+
+/* How does it work section start */
+
+
+.hdiw-color {
+    background-color: var(--color-background-hdiw);
+    height: 1000px;
+
+    @media (min-width: 768px) {
+        height: 838px;
+    }
+    @media (min-width: 1200px) {
+        height: 1077px;
+    }
+    
+}
+
+.hdiw-flex {
+    padding-top: 50px;
+}
+
+.hdiw-h2 {
+    text-align: center;
+    font-size: 40px;
+}
+
+.hdiw-phones {
+    display:none;
+               
+    @media (min-width: 768px) {
+        display: flex;
+        justify-content: center;
+        
+        height: 450px;
+        
+        padding-top: 30px; 
+    }
+    @media (min-width: 1200px) {
+        display: flex;
+        justify-content:center;
+        height: 663px;
+        gap: 80px;
+        padding-top: 30px; 
+    }
+    
+
+}
+
+.hdiw-phones2 {
+    display: flex;
+    justify-content: center;
+    height: 545px;
+    
+
+    @media (min-width: 768px) {
+        display: none;
+        
+        
+    }
+
+
+}
+
+.hdiw-text {
+    display: block;
+    text-align: center;
+    padding-top: 30px;
+}
+
+.hdiw-tablet-text {
+    display: none;
+}
+
+.hdiw-desktop-text {
+    display: none;
+}
+
+@media (min-width: 768px) and (max-width: 1199px) {
+    .hdiw-text {display: none;}
+    .hdiw-tablet-text {
+        display: block;
+        text-align: center;
+        margin-top: 30px;
+        padding: 0 150px;
+    }
+
+}
+
+@media (min-width: 1200px) {
+    .hdiw-text {display: none;}
+    .hdiw-tablet-text {display: none;}
+    .hdiw-desktop-text {
+        display: block;
+        text-align: center;
+
+    }
+
+}
