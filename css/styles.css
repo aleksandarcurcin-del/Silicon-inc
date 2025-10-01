@@ -794,6 +794,82 @@ header {
 }
 
 .af-text2 {
-padding-bottom: 0;
+padding-bottom: 0;   
+}
+
+/* Testimonials section start */
+
+.testimonials {
+    display: none;
+
+    @media (min-width: 1200px) {
+        display: grid;
+    }
+}
+
+.testimonials-color {
+    background-color: var(--color-background-hdiw);
+    height: 542px;
     
+}
+
+
+.testimonials-grid{
+  display:grid;
+  grid-template-columns: 1fr 2fr;  
+  column-gap:24px;
+  align-items:start;
+  padding-top: 120px;
+}
+
+.testimonial-title{
+  font-size: 40px;
+}
+
+.testimonial-review{
+  display:grid;
+  grid-template-columns: repeat(2, minmax(280px,1fr)); /* två kort bredvid varandra */
+  gap:24px;
+}
+
+/* korten som tidigare */
+.review1, .review2{
+  background: var(--color-testimonial-background);
+  border-radius: 12px;
+  box-shadow: 0 8px 24px rgba(0,0,0,.06);
+  padding:5px;
+}
+
+.testimonialsquotes {
+    position: relative;
+    bottom: 30px;
+    left: 15px;
+}
+
+.avatar {
+    margin:0 10px 0 ;
+}
+
+.meta {
+    display: flex;
+    flex-direction: column;
+    line-height: 1.2;
+    
+    .name {
+        font-weight:bold; 
+        color:var(--color-heading-text);
+    }
+    .role {
+       font-size: 14px; 
+    }
+}
+
+.quote{
+    margin: 10px 20px 50px;
+}
+.rating{ display:block; padding: 0px 20px 25px; }
+
+.byline{
+  display: flex;
+  
 }
