@@ -828,11 +828,11 @@ padding-bottom: 0;
 
 .testimonial-review{
   display:grid;
-  grid-template-columns: repeat(2, minmax(280px,1fr)); /* två kort bredvid varandra */
+  grid-template-columns: repeat(2, minmax(280px,1fr)); 
   gap:24px;
 }
 
-/* korten som tidigare */
+
 .review1, .review2{
   background: var(--color-testimonial-background);
   border-radius: 12px;
@@ -872,4 +872,153 @@ padding-bottom: 0;
 .byline{
   display: flex;
   
+}
+
+
+/* FAQ section start */
+
+.faq{ padding-block: 100px; }
+
+.faq-grid{
+  display:grid;
+  grid-template-columns: 1fr;     
+  gap: 56px;
+  align-items:start;
+
+  @media (min-width: 1200px) {
+    display: grid;
+    grid-template-columns: 1fr 1.4fr;
+  }
+}
+
+
+
+
+.faq-title{ 
+    margin:0 0 12px; 
+    line-height:1.2; 
+    text-align: center;
+
+    @media (min-width: 768px) and (max-width: 1199px) {
+        padding: 0 200px;
+    }
+
+    @media (min-width: 1200px) {
+        text-align: left;
+        
+
+    }
+
+}
+.faq-text{ margin:50px 0 50px; 
+    color:var(--color-body-text);
+    text-align: center; 
+
+    @media (min-width: 768px) and (max-width: 1199px) {
+        padding: 0 180px;
+    }
+
+    @media (min-width: 1200px) {
+        text-align: left;
+
+    }
+
+}
+
+.faq-contact{
+    display: none;
+
+    @media (min-width: 1200px) {
+        display:grid;
+        grid-template-columns: 1fr 1fr;
+        gap: 20px;
+        
+    }
+  
+}
+.faq-contact-tablet{
+    display: none;
+
+    @media (min-width: 768px) and (max-width: 1200px) {
+        display:grid;
+        grid-template-columns: 1fr 1fr;
+        gap: 20px;
+    }
+  
+}
+
+.faq-contact1 {
+    border-radius: 12px;
+    border: 1px solid var(--faq-contact-border);
+    padding:35px;
+    
+}
+.faq-contact2 {
+    border: 1px solid var(--faq-contact-border);
+    border-radius: 12px;
+    padding:35px;
+}
+
+
+
+.faq-card{
+  display:flex; 
+  gap:14px;
+  
+  
+  background: var(--faq-card-bg, #fff);
+  
+  text-decoration:none; color:inherit;
+}
+
+
+/* Accordion tagit hjälp av chatgpt */
+.accordion{ display:grid; gap:12px; }
+
+.accordion-item{
+  background: var(--faq-item-bg, #fff);
+  border: 1px solid var(--faq-item-border, rgba(31, 31, 31, 0.103));
+  border-radius:12px;
+  box-shadow: 5px 2px 5px 1px #0f0f0f0a;
+  
+}
+
+.accordion-toggle{
+    appearance:none; border:0; background:transparent;
+    width:100%; text-align:left; padding:18px 20px;
+    display:flex; align-items:center; justify-content:space-between;
+    gap:16px; font: inherit; color: var(--color-heading-text);
+    cursor:pointer;
+
+      &:hover {
+        background-color: var(--none);
+        
+    }
+}
+.accordion-toggle:focus-visible{ outline:2px solid var(--primary); outline-offset:2px; }
+
+.chev{
+  width:30px; height:30px; border-radius:88px;
+  display:grid; place-items:center;
+  background: rgba(99,102,241,.12);
+  transition: transform .2s ease;
+}
+.chev::before{ content:"▾"; font-size:16px; color:var(--primary); line-height:1; }
+
+.accordion-toggle[aria-expanded="true"] .chev{ transform: rotate(180deg); }
+
+.accordion-panel{ padding:0 20px 18px; color:var(--color-body-text); }
+.accordion-panel[hidden]{ display:none; }
+
+#btn-faq {
+    display: flex;
+    width: 162px;
+    height: 50px;
+    border-radius: 5px;
+    justify-self: center;
+    
+    @media (min-width: 768px) {
+        display: none;
+    }
+    
 }
