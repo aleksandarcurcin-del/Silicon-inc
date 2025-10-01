@@ -724,3 +724,76 @@ header {
     }
 
 }
+
+/* App features section start */
+
+.app-features {
+    display: none;
+
+    @media (min-width: 1200px) {
+        display: grid;
+    }
+}
+
+
+.app-2x2{
+  display:grid;
+  grid-template-columns: 1fr;   
+  gap:72px;                         
+  align-items:center;
+  margin-block:96px;
+
+  @media (min-width: 768px) {
+    grid-template-columns: 1fr 1fr;
+  }
+  
+}
+
+
+.af-text {  padding-left: 0;}
+
+@media (min-width:768px){ .af-text{ padding-left:120px; } }
+.af-bullets{
+  list-style:none; 
+  padding:0; 
+  margin:16px 0 24px;
+  display:grid; 
+  row-gap:25px;
+}
+
+.af-bullets li{ 
+    display:flex; 
+    align-items:center; 
+    gap:10px; 
+}
+
+.af-btn {
+    width: 10rem;
+}
+
+.overlay {
+  position: absolute;
+  top: 330px;    
+  left: 210px;      
+}
+
+.af-media, .af-media2 { 
+    position: relative;
+    left: 80px;
+} 
+
+.overlay2 {
+  position: absolute;
+  bottom: 66px;    
+  left: 130px;
+}
+
+.af-mini{
+    display:grid; grid-template-columns: 1fr 1fr;
+    margin:12px 0 24px;
+}
+
+.af-text2 {
+padding-bottom: 0;
+    
+}
