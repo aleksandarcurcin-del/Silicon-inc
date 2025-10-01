@@ -1022,3 +1022,90 @@ padding-bottom: 0;
     }
     
 }
+
+/* Subscribe section start */
+
+.sub-color {
+    background-color: var(--color-background-hdiw);
+    width: 100%;
+    border-radius: 12px;
+    padding-bottom: 20px;
+}
+
+.sub-flex {
+    display: grid;
+    align-items: center;
+    grid-template-columns: 1fr;
+    row-gap: 50px;
+    padding: 10px;
+
+
+    @media (min-width: 768px) {
+        display: grid;
+        align-items: center;
+        grid-template-columns: 1fr auto;
+        column-gap: 50px;
+        padding: 50px;
+    }
+    
+}
+
+.sub-left {
+    display: flex;
+    align-items: center;
+    gap: 16px;
+    
+}
+
+.sub-mobile-text {
+    display: flex;
+
+    @media (min-width: 1200px) {
+        display: none;
+    }
+}
+
+.sub-desktop-text {
+    display: none;
+
+    @media (min-width:1200px) {
+        display: flex;
+    }
+}
+
+.form-email {
+    position: relative;
+    display: flex;
+    align-items: stretch;
+    height: 52px;
+    
+
+    
+    
+}
+
+.email-icon { 
+  position: absolute;
+  left: 12px;                         
+  top: 50%;
+  transform: translateY(-50%);        
+  width: 18px;
+  height: 18px;
+  pointer-events: none;               
+  opacity: .85;
+}
+
+#email {
+    width: 100%;
+    border-radius: 7px 0 0 7px;
+    outline: none;
+    border-color: rgba(128, 128, 128, 0.288);
+    padding: 0 12px 0 44px;
+
+}
+
+.subscribe-button {
+    border: none;
+    border-radius: 0 7px 7px 0;
+    height: 52px;;
+}
