@@ -1,0 +1,445 @@
+@import url('https://fonts.googleapis.com/css2?family=Manrope:wght@200..800&display=swap');
+
+*, *::before, *::after {
+    box-sizing: border-box;
+}
+
+:root {
+    --primary: #6366F1;
+    --color-body-text: #565973;
+    --color-body-background: #ffffff;
+    --color-heading-text: #0B0F19;
+    --color-button-text: #ffffff;
+    --color-button-background: var(--primary);
+    --color-background-hover-background: #0B0F19;
+    
+    --color-darkmode-text: #565973;
+    --color-darkmode-slider: white;
+    --color-logo: black;
+    --brand-border: rgba(0,0,0,.12);
+    --brand-bg:     rgba(0, 0, 0, 0);
+    --color-background-hdiw: #F3F6FF;
+    --color-testimonial-background: #FFFFFF;
+    --faq-card-bg: rgba(255, 255, 255, 0.082);
+    --faq-contact-border: rgba(54, 54, 54, 0.144);
+    --faq-item-bg: rgba(255,255,255,.04);
+    --faq-item-border: rgba(26, 26, 26, 0.027);
+    --none: rgba(5, 5, 5, 0);
+
+    --color-button-download-text: #ffffff;
+    --color-button-download-background: #0B0F19;
+    --color-button-download-hover-background: #0B0F19;
+    --color-background-apple-icon: #ffffff;
+
+    
+}
+
+
+html {
+    color-scheme: light;
+}
+
+.dark {
+    color-scheme: dark;
+    --primary: #6366F1;
+    --color-body-text: rgba(255, 255, 255, 0.705);
+    --color-body-background: #0f0e4441;
+    --color-heading-text: white;
+    --color-button-text: white;
+    --color-button-background: var(--primary);
+    --color-background-hover-background: black;
+    
+    --color-darkmode-text: #565973;
+    --color-darkmode-slider: #ffffff;
+    --color-darkmode-background: #6366F1;
+    --color-logo: white;
+    --brand-border: rgba(255,255,255,.14);
+    --brand-bg:     rgba(255, 255, 255, 0);
+    --color-background-hdiw: #f3f6ff04;
+    --color-testimonial-background: #ffffff04;
+    --faq-card-bg: rgba(255, 255, 255, 0);
+    --faq-contact-border: rgba(255, 255, 255, 0.062);
+    --faq-item-bg: rgba(255, 255, 255, 0.034);
+    --faq-item-border: rgba(255,255,255,.14);
+    --color-button-download-text: #33354D;
+    --color-button-download-background: #F3F6FF;
+    --color-button-download-hover-background: #0B0F19;
+    --color-background-apple-icon: #3E4265;
+}
+
+.page {
+    height: 100dvh;
+    
+    
+}
+
+body {
+    font-size: 16px;
+    font-weight: 400;
+    font-style: normal;
+    font-family: "Manrope", sans-serif;
+    color: var(--color-body-text);
+    background-color: var(--color-body-background);
+    
+
+}
+
+h1,h2,h3,h4,h5,h6 {
+    color:var(--color-heading-text);
+}
+
+h2 {
+    font-size: 32px;
+}
+
+h4 {
+    font-size: 24px;
+}
+
+
+
+
+
+.toggle {
+    --_W: 40px;
+    --_H: 20px;
+    
+    width: var(--_W);
+    height: var(--_H);
+    
+    top: 0;
+    bottom: 0;
+    left: 0;
+    right: 0;
+
+    position: relative;
+    display: inline-block;
+    
+
+    input[type="checkbox"] {
+        width: 0;
+        height: 0;
+        opacity: 0;
+    }
+
+
+    .slider {
+        position: absolute;
+        cursor: pointer;
+        inset: 0;
+        background-color: #b3b3b3;
+        border-radius: 100vw;
+        box-shadow: inset 0 0 3px #00000036;
+        
+        transition: 400ms;
+    }
+
+    .slider::before {
+        content: '';
+        position: absolute;
+        top: 0;
+        left: 0;
+        height: 100%;
+        aspect-ratio: 1;
+        background-color: #fff;
+        border-radius: 50%;
+        box-shadow: 0 0 5px #00000057;
+
+        transition: 400ms;
+    }
+
+    .slider::after {
+        content: '';
+        position: relative;
+        top: 0;
+        left: 0;
+        height: 100%;
+        aspect-ratio: 1;
+        background-color: #fff;
+        border-radius: 50%;
+        box-shadow: 0 0 5px #00000057;
+
+        transition: 400ms;
+    }
+
+    input[type="checkbox"]:checked + .slider::before {
+        left: calc(100% - var(--_H));
+        background-color: var(--color-darkmode-slider);
+    }
+    input[type="checkbox"]:checked + .slider {
+        
+        background-color: var(--color-darkmode-background);
+    }
+
+
+
+}
+
+button, .btn {
+
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    gap: 20px;
+    height: 42px;
+
+    color: var(--color-button-text);
+    background-color: var(--color-button-background);
+    padding: 10px 20px;
+    border-radius: 4px;
+    text-decoration: none;
+
+    &:hover {
+        background-color: var(--color-background-hover-background);
+        text-decoration: underline;
+    }
+
+
+
+    
+}
+
+.gradientcolor {
+    background: radial-gradient(ellipse at bottom ,rgba(99, 101, 241, 0.100) 0%, rgba(219, 70, 239, 0.050) 42%, rgba(241, 244, 253, 0.070) 83%);
+    
+
+}
+
+.container {
+    width: 100%;
+    max-width: 1320px;
+    margin-left: auto;
+    margin-right: auto;
+    padding-left: 1rem;
+    padding-right: 1rem;
+   
+}
+
+
+/* Header section start */
+
+header {
+
+    
+
+    .header-inner {
+
+
+        display: flex;
+        justify-content: space-between;              
+        align-items: center;
+        padding: 1rem;
+        
+        .darkmode {
+            display: flex;
+            gap: 10px;
+        }
+
+        .darkmode-text {
+            display: none;
+            @media (min-width: 768px ) {
+                display: block;
+            }
+            
+        }
+
+        .logo {
+            display: flex;
+            align-items: center;
+            gap: 10px;
+            font-size: 20px;
+            font-weight: 600;
+            letter-spacing: 1px;
+            color: var(--color-logo);
+        }
+   
+        .menu { display:block; }
+
+
+        @media (min-width:1200px){
+            .menu { display:none; }
+        }
+
+
+        .actions {
+            display: flex;
+                          
+            align-items: center;
+            gap: 1rem;
+        }
+
+        .btn {
+            display: none;
+            @media (min-width: 1200px) {
+                display: block;
+            }
+        }
+
+          
+        
+    }
+}
+
+/* hero section start */
+
+.hero{
+  padding:0;
+                 
+}
+.hero-grid{
+  display:grid;
+  grid-template-columns:1fr; 
+  gap:24px;
+  text-align:center;
+}
+.herotitle{
+  font-size:36px;            
+  font-weight:800;
+}
+.herotext{
+  font-size:18px;
+  margin:0 0 24px;
+}
+.hero-download{
+  display:flex;
+  flex-direction:column;     
+  gap:12px;
+  justify-content:center;
+}
+.herobtn{
+  text-decoration:none;
+  display:inline-block;
+  border-radius:10px;
+  overflow:hidden;
+}
+.herobtn .btn-area{
+  padding:8px 100px;
+  display:grid;
+  column-gap:8px;
+  align-items:center;
+  grid-template-columns:auto 1fr;
+  grid-template-areas:
+    "icon text"
+    "icon store";
+  background-color:var(--color-button-download-background);
+  color:var(--color-button-download-text);
+  font-size:.8rem;
+}
+.herobtn .download-app-icon{
+    grid-area:icon;
+    
+}
+
+    /* tog hjälp av chatgpt för att göra apple-loggan som en mask */
+
+#apple-icon {
+  display:inline-block; width:30px; height:30px;
+  background-color: var(--color-background-apple-icon);
+  -webkit-mask-image: url('../images/apple-logo1.svg');
+  mask-image: url('../images/apple-logo1.svg');
+  -webkit-mask-repeat:no-repeat; mask-repeat:no-repeat;
+  -webkit-mask-position:center;  mask-position:center;
+  -webkit-mask-size:contain;     mask-size:contain;
+}
+
+.herobtn .download-app-text{ grid-area:text; font-weight:600; font-size:.9em; margin:0; }
+.herobtn .download-app-store{ grid-area:store; font-size:1.5em; font-weight:600; margin:0; line-height:1; }
+
+.herophones{
+  display:none;              
+  width:100%;
+  height:auto;
+}
+
+
+@media (min-width:768px) and (max-width:1199px){
+  .hero{ padding-top:5rem; }
+
+  .hero-grid{
+    width:100%;
+    max-width:1320px;
+    margin-inline:auto;
+    padding-inline:2rem;
+    display:grid;
+    grid-template-columns:minmax(360px,1fr) minmax(320px,1fr);
+    align-items:center;
+    row-gap: 12px;
+    text-align:left;
+  }
+
+  .hero-left{ display:contents; }        /* låt barnen bli egna grid-items */
+
+  .herotitle{
+    grid-column:1 / -1;                  /* egen rad, över båda kolumnerna */
+    font-size:44px;
+    line-height:1.1;
+    margin:0 0 8px;
+    text-align:center;
+    padding: 0 150px;                   /* enligt figma */
+  }
+
+  .herotext{
+    position: relative;
+    grid-column:1;
+    margin:0 0 6px;
+    top: 100px;
+                      
+  }
+
+  .hero-download{
+    grid-column:1;
+    display:grid;                        /* knappar bredvid varandra */
+    grid-template-columns:210px 210px;
+    gap:12px;
+    
+    
+    
+  }
+
+
+  .herobtn .btn-area {
+    padding: 12px 20px;
+    border-radius:12px;
+    column-gap:1rem;
+    
+  }
+
+    #apple-download {
+    padding: 1px 15px; 
+}
+
+
+  .herophones{
+    grid-column:2;
+    display:block;
+    max-width:480px;
+    width:100%;
+    height:auto;
+    justify-self:end;
+    align-self:center;
+  }
+}
+
+
+
+/* Desktop ≥1200px: två kolumner, större titel, telefonerna till höger */
+@media (min-width:1200px){
+  .hero{ padding-top:5rem; }
+  .hero-grid{
+    grid-template-columns:1fr 1fr;
+    gap:3rem;
+    text-align:left;
+  }
+  .herotitle{ font-size:56px; }
+  .hero-download{
+    display:grid; grid-template-columns:210px 210px; gap:12px;
+    justify-self:start;
+  }
+    .herobtn .btn-area {
+    padding: 12px 20px;
+    border-radius:12px;
+    column-gap:1rem;
+  }
+
+  .herophones{ display:block; }
+}
