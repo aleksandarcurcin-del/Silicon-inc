@@ -89,11 +89,11 @@ h1,h2,h3,h4,h5,h6 {
 }
 
 h2 {
-    font-size: 32px;
+    font-size: 28px;
 }
 
 h4 {
-    font-size: 24px;
+    font-size: 22px;
 }
 
 
@@ -612,7 +612,6 @@ header {
 
 .features-h2 {
     grid-area: features-h2;
-    font-size: 28px;
     margin-top: 0;
 
     @media (min-width: 768px) and (max-width: 1199px) {
@@ -648,7 +647,7 @@ header {
 }
 
 .feature-icon {
-    padding: 15px 0 1px;
+    padding: 20px 0 1px;
 }
 
 
@@ -665,7 +664,15 @@ header {
 
 .hdiw-h2 {
     text-align: center;
-    font-size: 40px;
+
+    @media (min-width: 768px) and (max-width: 1199px) {
+        font-size: 34px;
+    }
+
+    @media (min-width: 1200px) {
+        font-size: 40px;
+    
+    }
 }
 
 .hdiw-phones {
@@ -701,14 +708,18 @@ header {
         
         
     }
-
-
 }
 
 .hdiw-text {
     display: block;
     text-align: center;
     padding-top: 30px;
+
+    .hdiw-h4 {
+        padding: 0 30px;
+    }
+
+
 }
 
 .hdiw-tablet-text {
@@ -726,6 +737,11 @@ header {
         text-align: center;
         margin-top: 30px;
         padding: 0 150px;
+
+        .hdiw-tablet-h4 {
+            font-size: 23px;
+            
+        }
     }
 
 }
@@ -737,6 +753,10 @@ header {
         display: block;
         text-align: center;
 
+    }
+    .hdiw-desktop-h4 {
+        font-size: 24px;
+        
     }
 
 }
@@ -766,7 +786,9 @@ header {
 }
 
 
-.af-text {  padding-left: 0;}
+.af-text {  
+    padding-left: 0;
+}
 
 @media (min-width:768px){ .af-text{ padding-left:120px; } }
 .af-bullets{
@@ -793,7 +815,11 @@ header {
   left: 210px;      
 }
 
-.af-media, .af-media2 { 
+.af-media{ 
+    position: relative;
+    
+} 
+.af-media2 { 
     position: relative;
     left: 80px;
 } 
@@ -810,9 +836,18 @@ header {
 }
 
 .af-text2 {
-padding-bottom: 0;   
-}
+    padding: 0 40px;
+    
+    .medium {
+        padding-right: 20px;
+        
+    }
 
+
+}
+.af-text-h2 {
+        font-size: 32px;
+}
 /* Testimonials section start */
 
 .testimonials {
@@ -914,15 +949,17 @@ padding-bottom: 0;
     margin:0 0 12px; 
     line-height:1.2; 
     text-align: center;
+    font-size: 25px;
 
     @media (min-width: 768px) and (max-width: 1199px) {
         padding: 0 200px;
+        font-size: 32px;
     }
 
     @media (min-width: 1200px) {
         text-align: left;
+        font-size: 32px;
         
-
     }
 
 }
@@ -1087,6 +1124,7 @@ padding-bottom: 0;
 
     @media (min-width:1200px) {
         display: flex;
+        font-size: 24px;
     }
 }
 
@@ -1094,7 +1132,9 @@ padding-bottom: 0;
     position: relative;
     display: flex;
     align-items: stretch;
-    height: 52px;  
+    height: 52px;
+    
+
 }
 
 .email-icon { 
@@ -1115,6 +1155,14 @@ padding-bottom: 0;
     border-color: rgba(128, 128, 128, 0.288);
     padding: 0 12px 0 44px;
 
+}
+
+input[type="email"] {
+    background-color: white;
+
+    @media (min-width: 1200px) {
+        background-color: rgba(255, 255, 255, 0.048);
+    }
 }
 
 .subscribe-button {
