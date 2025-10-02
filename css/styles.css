@@ -17,6 +17,7 @@
     --color-logo: black;
     --brand-border: rgba(0,0,0,.12);
     --brand-bg:     rgba(0, 0, 0, 0);
+    --brand-tablet-bg: #ffffff00;
     --color-background-hdiw: #F3F6FF;
     --color-testimonial-background: #FFFFFF;
     --faq-card-bg: rgba(255, 255, 255, 0.082);
@@ -53,6 +54,7 @@ html {
     --color-logo: white;
     --brand-border: rgba(255,255,255,.14);
     --brand-bg:     rgba(255, 255, 255, 0);
+    --brand-tablet-bg: #131022;
     --color-background-hdiw: #f3f6ff04;
     --color-testimonial-background: #ffffff04;
     --faq-card-bg: rgba(255, 255, 255, 0);
@@ -199,7 +201,11 @@ button, .btn {
 
 .gradientcolor {
     background: radial-gradient(ellipse at bottom ,rgba(99, 101, 241, 0.100) 0%, rgba(219, 70, 239, 0.050) 42%, rgba(241, 244, 253, 0.070) 83%);
-    
+    padding: 0 0 100px 0;
+
+    @media (min-width: 768px) {
+        padding: 0;
+    }
 
 }
 
@@ -476,7 +482,7 @@ header {
     width: 158px;
     border: 1px solid var(--brand-border);
     border-radius: 7px;
-    background: var(--brand-bg);
+    background: var(--brand-tablet-bg);
     }
     .img2 {
     display:flex; justify-content:center; align-items:center;
@@ -484,7 +490,7 @@ header {
     width: 158px;
     border: 1px solid var(--brand-border);
     border-radius: 7px;
-    background: var(--brand-bg);
+    background: var(--brand-tablet-bg);
     
     }
     .img3 {
@@ -493,7 +499,7 @@ header {
     width: 158px;
     border: 1px solid var(--brand-border);
     border-radius: 7px;
-    background: var(--brand-bg);
+    background: var(--brand-tablet-bg);
     }
     .img4 {
     display:flex; justify-content:center; align-items:center;
@@ -501,7 +507,7 @@ header {
     width: 158px;
     border: 1px solid var(--brand-border);
     border-radius: 7px;
-    background: var(--brand-bg);
+    background: var(--brand-tablet-bg);
     }
     .img5 {
     display:none;
@@ -567,7 +573,7 @@ header {
     display: flex;
     flex-direction: column;
     align-items: center;
-    margin-top: 8rem;
+    margin-top: 3rem;
     margin-bottom: 5rem;
 
     @media (min-width: 1200px) {
@@ -578,7 +584,7 @@ header {
                 "featuresphone features-p1"
                 "featuresphone featuresicon"
         ;
-        
+        margin-top: 8rem;
     }
     
 }
@@ -588,7 +594,7 @@ header {
   grid-template-columns: 56px 1fr;              
   column-gap:16px;
   align-items:start;
-  margin-top: 3rem;
+  margin-top: 1rem;
 }
 
 
@@ -606,8 +612,17 @@ header {
 
 .features-h2 {
     grid-area: features-h2;
-    font-size: 40px;
+    font-size: 28px;
     margin-top: 0;
+
+    @media (min-width: 768px) and (max-width: 1199px) {
+        font-size: 34px;
+    }
+
+    @media (min-width: 1200px) {
+        font-size: 40px;
+    
+    }
 }
 
 .features-p1 {
@@ -615,6 +630,9 @@ header {
     font-size: large;
     text-align: center;
     
+    @media (min-width: 1200px) {
+        text-align: left;
+    }
 }
 
 .featuresicons {
@@ -628,6 +646,12 @@ header {
     }
     
 }
+
+.feature-icon {
+    padding: 15px 0 1px;
+}
+
+
 
 
 /* How does it work section start */
