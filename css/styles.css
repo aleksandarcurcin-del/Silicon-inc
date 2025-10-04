@@ -1029,14 +1029,23 @@ header {
 
 
 .faq-card{
-  display:flex; 
-  gap:14px;
-  
-  
-  background: var(--faq-card-bg, #fff);
-  
-  text-decoration:none; color:inherit;
+    display:flex; 
+    gap:14px;
+    
+
+    background: var(--faq-card-bg, #fff);
+
+    text-decoration:none; color:inherit;
+    .link1 {
+        color: var(--primary);
+        
+    }
+    .link2 {
+        color: #22C55E;
+    }
+
 }
+
 
 
 /* Accordion tagit hjälp av chatgpt */
